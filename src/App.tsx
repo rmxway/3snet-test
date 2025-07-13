@@ -7,7 +7,7 @@ import { Button } from '@/components/ui';
 
 function App() {
 	const { data, isSuccess, isLoading, isError, error } = GetData();
-	const [start, setStart] = useState(0);
+	const [start, setStart] = useState(5);
 	const [rangeData, setRangeData] = useState<RangeData>();
 
 	useEffect(() => {

@@ -2,8 +2,6 @@ import { TableMonth } from '@/helpers';
 import { FC } from 'react';
 
 export const HeaderTotal: FC<{ total: TableMonth[] }> = ({ total }) => {
-	console.log(total);
-
 	return (
 		<tr className="border-t border-r border-gray-300">
 			<th className="p-3 text-gray-400 text-sm text-left border-l font-normal border-gray-300">Manager</th>
