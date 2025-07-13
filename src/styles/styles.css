@@ -1,0 +1,30 @@
+@import url('./fonts.css');
+@import 'tailwindcss';
+@import './theme.css';
+
+body {
+	font-family: var(--font-custom);
+	min-width: 1440px;
+}
+
+.table-container {
+	width: 1440px;
+	margin: 0 auto;
+}
+
+.button-container {
+	float: right;
+	display: flex;
+	gap: 10px;
+	padding: 12px 0;
+}
+
+.prev-btn .icofont {
+	display: block;
+	transform: rotate(-90deg);
+}
+
+.next-btn .icofont {
+	display: block;
+	transform: rotate(90deg);
+}
