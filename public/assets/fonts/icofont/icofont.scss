@@ -1,0 +1,33 @@
+@use "sass:map";
+
+$icofont-font: 'icofont';
+
+@font-face {
+    font-family: $icofont-font;
+    src: url(".//icofont.ttf?da69c2abdeec33ee53e2eb5e9c8d63a4") format("truetype"),
+url(".//icofont.woff?da69c2abdeec33ee53e2eb5e9c8d63a4") format("woff"),
+url(".//icofont.woff2?da69c2abdeec33ee53e2eb5e9c8d63a4") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+.icofont {
+    font-family: $icofont-font !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    font-size: 1rem;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$icofont-map: (
+    'arrow-up': '\f101',
+);
+
+.icofont-arrow-up:before {
+    content: map.get($icofont-map, 'arrow-up');
+}
